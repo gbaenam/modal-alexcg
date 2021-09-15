@@ -62,11 +62,12 @@ img {
 }
 
 .modal {
-    // modal
+    // Estilos de modal
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: 1000;
     position: fixed;
     visibility: hidden;
     background-color: rgba(0,0,0,.7);
@@ -78,8 +79,8 @@ img {
     justify-content: center;
 
 
-
     &__content {
+        // Estilos de modal__content
         width: 30%;
         height: 50%;
         display: flex;
@@ -89,10 +90,17 @@ img {
         justify-content: center;
         background-color: #fff;
 
-
+        // Animación de modal__content
         transition: transform 1s;
         transform: translateY(-200%);
+    }
 
+    &__close-icon {
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
     }
 
     &__image {
