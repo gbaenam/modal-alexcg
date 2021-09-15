@@ -18,11 +18,12 @@ openModal.addEventListener('click', () => {
     modalContent.classList.add('modal--open')
 })
 
+// Cerrando el modal 1
 closeModal.addEventListener('click', e => {
     close(e)
 })
 
-// Cerrando el modal
+// Cerrando el modal 2
 modal.addEventListener('click', e => {
     if (e.target.classList.contains('modal')) close(e)
 })
