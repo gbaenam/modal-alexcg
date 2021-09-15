@@ -68,8 +68,7 @@ img {
     width: 100%;
     height: 100vh;
     position: fixed;
-    transition: transform 1s;
-    transform: translateY(-200%);
+    visibility: hidden;
     background-color: rgba(0,0,0,.7);
 
 
@@ -89,6 +88,11 @@ img {
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
+
+
+        transition: transform 1s;
+        transform: translateY(-200%);
+
     }
 
     &__image {
